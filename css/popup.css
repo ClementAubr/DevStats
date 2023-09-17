@@ -1,0 +1,62 @@
+body {
+  margin: 10px;
+  /*width: 100%;
+  height: auto;*/
+  background-color: whitesmoke;
+  font-family: "Ubuntu", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  /*overflow-x: hidden;
+  cursor: none;*/
+}
+
+.classic-button {
+  color: whitesmoke;
+  background-color: #2b81e9;
+  border: 2px solid #2b81e9;
+  text-align: center;
+  font-size: 10px;
+  border-radius: 3rem;
+  padding: 7px;
+  cursor: pointer;
+  text-transform: uppercase;
+
+  transition: all 0.3s ease-in-out 0.1s;
+}
+
+.classic-button:hover {
+  color: #2b81e9;
+  background-color: whitesmoke;
+  font-weight: bold;
+  scale: 1.05;
+
+  transition: all 0.3s ease-in-out;
+}
+
+#visited-ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin-top: 0;
+  width: 70%;
+}
+
+.tiny-icon {
+  width: 15px;
+  height: 15px;
+}
+
+.visited-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 5px;
+}
+
+#double-check {
+  color: rgb(221, 21, 21);
+  margin-bottom: 0;
+  display: none;
+}

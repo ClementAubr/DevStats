@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- charger la police d'écriture -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+
+    <!-- charger le style -->
+    <link rel="stylesheet" href="../css/index.css">
+
+    <!-- charger les icônes (font awesome)
+    <script src="https://kit.fontawesome.com/bf31f3517c.js" crossorigin="anonymous"></script>-->
+
+    <!-- charger la miniature -->
+    <link rel="shortcut icon" href="../res/icon.png">
+
+    <!-- <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> -->
+    <!-- <script type="module" src="/js/chart.min.js"></script> -->
+    <!-- <script type="module" src="chrome-extension://agfhopkdlkmhhabbeecfehiagiajiean/js/chart.min.js"></script> -->
+
+    <!-- importation de chart.js pour les graphiques -->
+    <script src="../js/chart.js"></script>
+
+
+    <title>DevStats - Tableau de Bord</title>
+</head>
+
+<body>
+    <div id="added-popup">
+        <p>Website : <span class="website-url">url</span> was successfully added to the list.</p>
+    </div>
+
+    <!-- tooltip quand on survole une url -->
+    <div id="site-tooltip"></div>
+
+    <main>
+        <div id="title-container">
+            <h1>DevStats</h1>
+            <p>tableau de bord</p>
+        </div>
+
+        <section id="add-site-section">
+            <h2 class="section-title">Ajouter un site</h2>
+            <div class="input-container">
+                <input type="text" id="input" required="" autocomplete="off">
+                <label for="input" class="label">website url</label>
+                <div class="underline"></div>
+
+
+
+            </div>
+
+            <div id="site-list-container">
+                <div id="site-list">
+                </div>
+            </div>
+
+            <button id="add-site-button" class="classic-button">Ajouter</button>
+        </section>
+
+        <section id="graph-section">
+            <h2 class="section-title">Graphe</h2>
+
+            <div id="graphics-container">
+                <div class="chart-container">
+                    <canvas id="chart1"></canvas>
+                </div>
+                <div class="chart-container">
+                    <canvas id="chart2"></canvas>
+                </div>
+            </div>
+
+
+            <div class="centered">
+                <button id="dl-graphics-btn" class="classic-button">Download</button>
+            </div>
+
+        </section>
+
+        <section id="stats-section">
+            <div class="inline">
+                <h2 class="section-title">Statistiques</h2>
+                <button id="reset-button" class="classic-button" title="resets all counters to 0">Reset</button>
+                <button id="reset-all-button" class="classic-button" title="deletes all the data of the extension">Reset
+                    all</button>
+            </div>
+
+            <p id="last-reset">Depuis le 09/04/2023</p>
+
+            <table id="stats-table">
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>Website</th>
+                        <th>Visits</th>
+                        <th>Last visit</th>
+                        <th>Elapsed time</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <div class="remove-site-btn">-</div>
+                        </td>
+                        <td>Site url</td>
+                        <td>nb of vivits</td>
+                        <td>last vivit</td>
+                        <td>Elapsed</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="centered">
+                <button id="dl-csv-button" class="classic-button">Download</button>
+            </div>
+
+        </section>
+
+    </main>
+
+    <script src="../js/index.js"></script>
+
+</body>
+
+
+</html>

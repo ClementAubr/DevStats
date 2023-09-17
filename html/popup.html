@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- charger la police d'écriture -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+
+    <!-- charger le style -->
+    <link rel="stylesheet" href="../css/popup.css">
+
+    <title>DevStats</title>
+</head>
+
+<body>
+    <button class="classic-button" id="clear-data">reset</button>
+    <p id="last-clear">Depuis le <span class="date">31/12/2000</span>
+    </p>
+
+    <ul id="visited-ul">
+        <li class="openclassrroms visited-item"><img class="tiny-icon" src="../res/icons/openclassrooms.com.png"
+                alt="icone site"> <span class="value">0</span></li>
+        <li class="stackoverflow visited-item"><img class="tiny-icon" src="../res/icons/stackoverflow.com.png"
+                alt="icone site">
+            <span class="value">0</span>
+        </li>
+        <li class="chatgpt visited-item"><img class="tiny-icon" src="../res/icons/chat.openai.com.png" alt="icone site">
+            <span class="value">0</span></li>
+    </ul>
+
+    <button class="classic-button" id="open-full">open</button>
+
+    <p id="double-check">double check</p>
+
+    <script src="../js/popup.js"></script>
+</body>
+
+
+</html>
